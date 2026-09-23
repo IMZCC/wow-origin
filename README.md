@@ -2,6 +2,10 @@
 
 面向 [Aduoer](https://github.com/Aduoer-Music) 的 QQ 音乐、网易云音乐统一 Wow v1 音源服务，支持搜索、歌单、榜单、歌曲、歌手、专辑、歌词和播放地址。
 
+## 截图
+![image1](images/image1.png)
+![image1](images/image2.png)
+
 ## 部署
 
 | 方式 | 适合场景 | 说明 |
@@ -17,7 +21,7 @@
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/Anomi-oo/wow-origin)
 
-点击按钮并授权即可部署。账号保存在 Durable Object SQLite 中，不使用 Cloudflare Containers，也不需要 PostgreSQL。
+点击按钮并授权即可部署。后续可在生成仓库的 **Actions → Sync upstream → Run workflow** 中手动同步上游，Cloudflare 会自动重新部署；同步不会修改 Cloudflare 环境变量和账号数据。
 
 如需洛雪源，在部署页面的构建变量中设置：
 
